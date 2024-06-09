@@ -18,7 +18,14 @@ const TestChart2 = () => {
     console.log("呼んだ");
   }, []);
 
-  return <div className="App">{dateTime.toLocaleDateString()}</div>;
+  return (
+    <div className="App">
+      {dateTime.toLocaleDateString()}
+      <svg>
+        <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
+      </svg>
+    </div>
+  );
 };
 
 export default TestChart2;

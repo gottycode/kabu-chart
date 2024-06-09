@@ -1,0 +1,26 @@
+.search-conditions {
+  border: solid 1px var(--color-grey-light-4);
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+
+  &--title {
+    position: absolute;
+    top: -0.9rem;
+    padding: 0 0.5rem;
+    background-color: white;
+  }
+  &--items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &--item {
+    margin: 0.5rem;
+    > label {
+      display: inline-block;
+      width: 7rem;
+    }
+  }
+}

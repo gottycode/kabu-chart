@@ -1,16 +1,16 @@
 import "./App.scss";
-import TestChart from "./components/TestChart";
-import TestChart2 from "./components/TestChart2";
-import TestChart3 from "./components/TestChart3";
+import Header from "./components/UI/Header";
+import Sidebar from "./components/UI/Sidebar";
+import Main from "./components/UI/Main";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <TestChart />
-      <TestChart2 />
-      <TestChart3 />
+    <div className="container">
+      <Header />
+      <Sidebar />
+      <Main />
     </div>
   );
-}
+};
 
 export default App;
