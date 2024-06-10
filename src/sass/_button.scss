@@ -2,7 +2,6 @@
   &,
   &:link,
   &:visited {
-    margin-left: 50rem;
     text-decoration: none;
     padding: 1.2rem 4rem;
     display: inline-block;
@@ -32,17 +31,27 @@
     background-color: var(--color-primary);
     color: var(--color-grey-light-1);
 
-    &::hover {
+    &:hover {
       background-color: var(--color-primary-light);
     }
   }
 
   &--secondary {
-    background-color: var(--color-grey-dark-2);
-    color: var(--color-grey-light-1);
+    background-color: var(--color-grey-light-3);
+    color: var(--color-primary);
 
-    &::hover {
-      background-color: var(--color-grey-dark-3);
+    &:hover {
+      background-color: var(--color-grey-light-2);
     }
+  }
+  &--logout {
+    background-color: var(--color-grey-light-3);
+    color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-grey-light-2);
+    }
+    padding: 1rem 3rem;
+    font-size: 1rem;
   }
 }

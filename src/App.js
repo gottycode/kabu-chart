@@ -1,7 +1,7 @@
 import "./App.scss";
-import Header from "./components/UI/Header";
-import Sidebar from "./components/UI/Sidebar";
-import Main from "./components/UI/Main";
+import Header from "./components/layout/Header";
+import Sidebar from "./components/layout/Sidebar";
+import Main from "./components/layout/Main";
 
 const App = () => {
   return (
