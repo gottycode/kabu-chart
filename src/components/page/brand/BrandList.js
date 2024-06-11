@@ -1,5 +1,11 @@
 const BrandList = () => {
-  return <div>LIst</div>;
+  return (
+    <div className="container">
+      <Header />
+      <Sidebar />
+      <Main />
+    </div>
+  );
 };
 
 export default BrandList;

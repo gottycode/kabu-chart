@@ -1,7 +1,7 @@
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
 import React, { useEffect, useState } from "react";
-import { fetchFinanceChart } from "../helper/fetch";
+import { fetchFinanceChart } from "../../helper/fetch";
 
 const TestChart2 = () => {
   let unixtime = 1707436800;

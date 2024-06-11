@@ -1,5 +1,5 @@
 const RegisterBrand = () => {
-  return <div>LIst</div>;
+  return <div>regster</div>;
 };
 
 export default RegisterBrand;

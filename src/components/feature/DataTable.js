@@ -1,6 +1,7 @@
-const TableData = () => {
+import "./DataTable.scss";
+const DataTable = () => {
   return (
-    <div>
+    <div className="data-table">
       <table className="responsive-table">
         <thead>
           <tr>
@@ -61,7 +62,7 @@ const TableData = () => {
           </tr>
         </tbody>
       </table>
-      <div className="wrapper">
+      <div className="data-table__pagination">
         <div className="prev">&lt;</div>
         <ul>
           <li>1</li>
@@ -79,4 +80,4 @@ const TableData = () => {
   );
 };
 
-export default TableData;
+export default DataTable;

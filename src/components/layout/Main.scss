@@ -5,9 +5,11 @@
 }
 
 .main {
+  display: grid;
+  // justify-self: unset;
+  justify-items: center;
   &__button-box {
-    display: grid;
     grid-auto-flow: column;
-    justify-items: center;
   }
+  overflow-x: scroll;
 }

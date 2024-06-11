@@ -19,19 +19,19 @@ const SearchForm = () => {
         <label className="search-conditions--title">検索条件</label>
         <div className="search-conditions--items">
           <div className="search-conditions--item">
-            <label className="form-label" for="item1">
+            <label className="form-label" htmlFor="item1">
               学生番号
             </label>
             <input type="text" id="item1" {...register("example")} />
           </div>
           <div className="search-conditions--item">
-            <label className="form-label" for="item2">
+            <label className="form-label" htmlFor="item2">
               氏名
             </label>
             <input type="text" id="item2"></input>
           </div>
           <div className="search-conditions--item">
-            <label className="form-label" for="item3">
+            <label className="form-label" htmlFor="item3">
               学年
             </label>
             <input type="text" id="item3"></input>

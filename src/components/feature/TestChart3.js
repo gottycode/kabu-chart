@@ -1,7 +1,7 @@
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
 import React, { useEffect, useState, useRef } from "react";
-import { fetchFinanceChart } from "../helper/fetch";
+import { fetchFinanceChart } from "../../helper/fetch";
 
 const TestChart = () => {
   const [hoverData, setHoverData] = useState("not yet");

@@ -1,5 +1,5 @@
-import TableData from "../TableData";
-import SearchForm from "../SearchForm";
+import DataTable from "../feature/DataTable";
+import SearchForm from "../feature/SearchForm";
 import Footer from "./Footer";
 import "./Main.scss";
 
@@ -12,7 +12,7 @@ const Main = () => {
         <button className="btn btn--primary">検索</button>
         <button className="btn btn--primary">新規作成</button>
       </div>
-      <TableData />
+      <DataTable />
       <Footer />
     </div>
   );
