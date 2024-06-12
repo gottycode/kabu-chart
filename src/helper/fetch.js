@@ -13,3 +13,7 @@ export const fetchFinanceChart = async (code) => {
   // console.log(data);
   return data;
 };
+
+export const fetchPokemon = () => {
+  return;
+};

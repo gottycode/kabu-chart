@@ -7,9 +7,10 @@
 .main {
   display: grid;
   // justify-self: unset;
-  justify-items: center;
+  // justify-items: center;
   &__button-box {
     grid-auto-flow: column;
   }
+  margin: 7rem 0;
   overflow-x: scroll;
 }

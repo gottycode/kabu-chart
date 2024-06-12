@@ -18,3 +18,26 @@
     margin: 1rem;
   }
 }
+.logo {
+  // margin: 2rem 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  &__img {
+    height: 4rem;
+  }
+  &__app-name {
+    font-size: 2rem;
+    color: var(--color-grey-light-4);
+    margin-left: 0.5rem;
+  }
+  &__link:link,
+  &__link:visited {
+    color: var(--color-grey-light-4);
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+  }
+}
