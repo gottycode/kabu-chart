@@ -1,0 +1,100 @@
+// Load Bulma's base styles and themes (including the minireset)
+@use "bulma/sass/base";
+@use "bulma/sass/themes";
+// @use "bulma/sass/utilities";
+
+// Load other Bulma components
+@use "bulma/sass/form";
+
+$class-prefix: "aaa";
+html {
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+.form {
+  display: grid;
+  margin: 0 4rem;
+  row-gap: 1.5rem;
+  font-size: 1.4rem;
+}
+.input {
+  // font-size: 1.6rem;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.4);
+  margin-right: 0.8rem;
+}
+
+.field {
+  // display: grid;
+  // place-items: center;
+  display: grid;
+  // grid-auto-flow: column;
+  // justify-items: center;
+  align-items: center;
+  height: 1.8rem;
+}
+
+.control {
+  // display: grid;
+  // place-items: center;
+  // display: grid;
+  // grid-auto-flow: column;
+  // justify-items: center;
+  align-items: center;
+  height: 1.8rem;
+}
+.radio,
+.checkbox {
+  padding: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.help {
+  // font-size: 1rem;
+  // display: contents;
+  // line-height: 50px;
+  // background-color: orangered;
+}
+.sk-field {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 12rem auto;
+  grid-template-rows: 1fr auto;
+  column-gap: 1.5rem;
+
+  &__label {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    font-size: 1.6rem;
+    color: var(--bulma-text-strong);
+    font-weight: var(--bulma-weight-semibold);
+  }
+  &__input {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr auto;
+  }
+  &__select {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+  &__msg {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+
+    font-size: 1rem;
+  }
+}

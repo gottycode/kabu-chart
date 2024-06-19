@@ -29,20 +29,5 @@
         }
       }
     }
-
-    & .prev,
-    & .next {
-      // position: absolute;
-      top: 50%;
-      // transform: translateY(-50%);
-      width: 25px;
-      height: 25px;
-      background: #fff;
-      text-align: center;
-      line-height: 25px;
-      border-radius: 50%;
-      cursor: pointer;
-      color: #2c63ff;
-    }
   }
 }

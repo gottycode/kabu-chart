@@ -1,5 +1,25 @@
 import "./DataTable.scss";
-const DataTable = () => {
+const DataTable = (props) => {
+  const data = props.tableData.map((record) => {
+    return (
+      <tr>
+        <td>{record["id"]}</td>
+        <td>{record["jpname"]}</td>
+        <td>{record["name"]}</td>
+        <td></td>
+        <td>{record["height"]}</td>
+        <td>{record["weight"]}</td>
+        <td>
+          <img
+            className="responsive-table__img"
+            src={record["spriteUrl"]}
+            alt="pokemon img"
+          ></img>
+        </td>
+      </tr>
+    );
+  });
+
   return (
     <div className="data-table">
       <div className="data-table__pagination">
@@ -19,77 +39,16 @@ const DataTable = () => {
       <table className="responsive-table">
         <thead>
           <tr>
-            <th>
-              <input type="checkbox"></input>
-            </th>
             <th>ID</th>
             <th>名前</th>
             <th>name</th>
             <th>タイプ</th>
             <th>身長</th>
             <th>体重</th>
+            <th>画像</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>1</td>
-            <td>日本千葉県船橋市薬円台</td>
-            <td>みず</td>
-            <td>やくえんだい</td>
-            <td>50</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>1</td>
-            <td>日本千葉県船橋市薬円台</td>
-            <td>みず</td>
-            <td>やくえんだい</td>
-            <td>50</td>
-            <td>100</td>
-          </tr>
-
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>1</td>
-            <td>日本千葉県船橋市薬円台</td>
-            <td>みず</td>
-            <td>やくえんだい</td>
-            <td>50</td>
-            <td>100</td>
-          </tr>
-
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>1</td>
-            <td>日本千葉県船橋市薬円台</td>
-            <td>みず</td>
-            <td>やくえんだい</td>
-            <td>50</td>
-            <td>100</td>
-          </tr>
-
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>1</td>
-            <td>日本千葉県船橋市薬円台</td>
-            <td>みず</td>
-            <td>やくえんだい</td>
-            <td>50</td>
-            <td>100</td>
-          </tr>
-        </tbody>
+        <tbody>{data}</tbody>
       </table>
     </div>
   );
