@@ -17,7 +17,7 @@ export const fetchFinanceChart = async (code) => {
 export const fetchPokemon = async () => {
   const pokemonList = [];
   // https://pokeapi.co/docs/v2#pokemon
-  for (let num = 1; num <= 100; num++) {
+  for (let num = 1; num <= 200; num++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${num}/`;
     const res = await fetch(url);
     const json = await res.json();
